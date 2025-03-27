@@ -20,6 +20,9 @@
     <main class="fundo-academia">
         <div class="conteudo-IMC">
             <h1 class="titulo">Calculadora - IMC</h1>
+            <div class="pesoPessoa">
+
+            </div>
             <form action="/processar-dados">
                 <div class="peso">
                     <label for="Peso">Peso em Kg:</label>
@@ -29,19 +32,20 @@
                     <label for="Altura em metros">Altura em metros:</label>
                     <input type="number" id="altura" min="0" step="0,1">
                 </div>
+
+                <input type="submit" value="Enviar" id="btn-calcular">
+
+                <div class="resultado"></div>
+
+                <div class="informacoes">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm" target="_blank">
+                        <img src="src/imagens/informacoes.png" alt="informacoes">Mais informações</a>
+                </div>
             </form>
-            <div class="btn-calcular">
-                <a>Calcular</a>
-            </div>
-
-             <div class="resultado"></div>
-
-            <div class="informacoes">
-                <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm" target="_blank">
-                <img src="src/imagens/informacoes.png" alt="informacoes">Mais informações</a>
-            </div>
         </div>
     </main>
+
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>
