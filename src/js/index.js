@@ -17,7 +17,7 @@
 */
 
 const btnCalcular = document.querySelector('#btn-calcular');
-const resultado = document.getElementById("resultado");
+
 
 btnCalcular.addEventListener("click", function (e) {
     e.preventDefault();    
@@ -38,7 +38,9 @@ btnCalcular.addEventListener("click", function (e) {
         alert('Obesidade grau I');
     }else if (valorIMC >= 35.0 && valorIMC <= 39.9){
         alert('Obesidade grau II');
+    }else if (valorIMC >= 40,0){
+        alert('Obesidade grau III')
     }else{
-        alert('Obesidade grau III');
+        return;
     }
 });
