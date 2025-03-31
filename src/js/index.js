@@ -16,11 +16,11 @@
         Passo 2: Fazer um alerta se o usuario clicar no botão calcular sem colocar os valores abrir um pop-up dizendo que está faltando valores
 */
 
-
 const btnCalcular = document.querySelector('#btn-calcular');
+const resultado = document.getElementById("resultado");
 
 btnCalcular.addEventListener("click", function (e) {
-    e.preventDefault();
+    e.preventDefault();    
 
     const peso = document.querySelector('#peso');
     const valorPeso = peso.value;
@@ -29,17 +29,16 @@ btnCalcular.addEventListener("click", function (e) {
     let valorIMC = valorPeso / (valorAltura * valorAltura);
 
     if (valorIMC >= 0 && valorIMC <= 18.5){
-        console.log('Abaixo do normal');
+        alert('Abaixo do normal');
     }else if (valorIMC >= 18.5 && valorIMC <= 24.9){
-        console.log('Normal');
+        alert('Normal');
     }else if (valorIMC >= 25.0 && valorIMC <= 29.9){
-        console.log('Sobrepeso');
+        alert('Sobrepeso');
     }else if (valorIMC >= 30.0 && valorIMC <= 34.9){
-        console.log('Obesidade grau I');
+        alert('Obesidade grau I');
     }else if (valorIMC >= 35.0 && valorIMC <= 39.9){
-        console.log('Obesidade grau II');
+        alert('Obesidade grau II');
     }else{
-        console.log('Obesidade grau III');
+        alert('Obesidade grau III');
     }
-    console.log(valorIMC);
 });
